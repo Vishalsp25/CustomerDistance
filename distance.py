@@ -25,8 +25,6 @@ class CalculateDistance:
             if (distance<100):
                 print(data['user_id'],data['name'])
                 with open('C:\\Users\\Vishal\\Desktop\\workarea\\Intercom\\resultvs.txt', 'a') as f:
-                   # f.seek(0)
-                   # f.truncate()
-                    f.write("%s\n" % data['name'])
+                    f.write("%s %s\n" % (data['user_id'] , data['name']))
                     f.close()
         return "file sucessfully created"
