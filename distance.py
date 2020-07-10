@@ -4,7 +4,6 @@ class CalculateDistance:
     def distance(datafile):
         Delete.deleteContent()
         for data in datafile["customer"]:
-        #print(p['longitude'])
             R = 6373.0
 
             lat1 = radians(53.339428)
